@@ -14,13 +14,30 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         >
+
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textColor="@color/primary_text_default_material_dark"
-            android:textSize="@dimen/title_font"
+            android:textSize="@dimen/header_font"
             android:textStyle="bold"
+            android:text="@string/first_aide"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_height"
+            android:layout_marginTop="@dimen/view_margin"
+            android:layout_marginBottom="@dimen/view_margin"
+            android:background="@color/photo_border" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/primary_text_default_material_dark"
+            android:textSize="@dimen/sub_title_font"
             android:text="@string/home_title"
             />
 
@@ -28,27 +45,27 @@
             android:id="@+id/getButton"
             style="@style/NavigateButton"
             android:text="@string/get_help"
-            android:layout_marginTop="50dp"/>
+            android:layout_marginTop="@dimen/fragment_main_marginTop"/>
         <Button
             android:id="@+id/circleButton"
             style="@style/NavigateButton"
             android:text="@string/circle"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="@dimen/fragment_main_marginTop_20"/>
         <Button
-            android:id="@+id/reportButton"
+            android:id="@+id/safetyToolsButton"
             style="@style/NavigateButton"
-            android:text="@string/reporting"
-            android:layout_marginTop="20dp"/>
+            android:text="@string/safety_tools"
+            android:layout_marginTop="@dimen/fragment_main_marginTop_20"/>
         <Button
             android:id="@+id/safetyResourceButton"
             style="@style/NavigateButton"
             android:text="@string/safety"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="@dimen/fragment_main_marginTop_20"/>
         <Button
             android:id="@+id/getHelpButton"
             style="@style/NavigateButton"
             android:text="@string/helping_others"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="@dimen/fragment_main_marginTop_20"/>
 
     </LinearLayout>
 

@@ -26,17 +26,29 @@ Or download the ZIP file from above
 
 ###Opening and Running 
 
-Open Android Studio and choose the option to open an existing project. 
-
-Navigate to the project and select the folder named 'PCSA-Android'.
-
-Press the play button inside Android Studio, choose the emulator, and the PCSA app should now be running. 
+1. Launch android studio
+2. Click on File, then New and then Import Project Or from the welcome screen of android studio click on Import project. (If you wish to contribute, you can directly link to GitHub)
+3. Browse to the directory where you cloned (extracted the zip) PCSA-Android App and take OK
+4. Let Android studio import the project, sync, run and build the Gradle.
+5. If Gradle finishes to build without error run the project by clicking on the play button on the tool bar.
+6. Wait for a few seconds and the app should start on your device(android phone or emulator)
 
 ## Documentation
 Latest documentation for PCSA can be found [here](https://github.com/systers/PCSA-Android/tree/develop/docs)
 
 ## Contributing
-Please submit a pull request if you wish to add on any improvements you have made to the app
+If you want to contribute to PCSA-Android, subscribe to our [systers-dev](http://systers.org/mailman/listinfo/systers-dev) mailing list and shoot an introductory email. Pick an open issue from the [issue list](https://github.com/systers/PCSA-Android/issues) taged "free", claim it in the comments, fix the issue and send us a pull request. 
+If you find an issue yourself you can report it, a community member will get back to you and approve the issue. Then you can fix it and submit a PR. Please go through our issue list first and make sure the issues you are reporting  do not replicate the issues already reported. If you have issues on multiple pages, report them separately. Do not combine them into a single issue.
+
+### Avoid doing the following mistakes
+1. Fix a new issue and submit a PR without reporting and getting it approved at first.
+2. Fix an issue assigned to somebody else and submit a PR before the assignee does. 
+3. Report issues which are previously reported by others. (Please check the closed issues too before you report an issue). 
+4. Suggest completely new developments in the issue list. (Please use the mailing list for this kind of suggestions. Use issue list to suggest bugs/features in the already implemented sections.)
+
+### Best Practices
+1. [Issue Reporting Best Practices](https://github.com/systers/PCSA-Android/wiki/Issue-Reporting-Best-Practices)
+2. [PR Best Practices] (https://github.com/systers/PCSA-Android/wiki/PR-Best-Practices)
 
 ## Troubleshooting/Issues
 
@@ -44,7 +56,6 @@ If there are any problems encountered when installing the IDE, you may want to c
 
 If there are any other questions or concerns, please contact the Systers contributors. 
 
-To help us fix some issues or to post the ones you found, go to the [issue list](https://github.com/systers/PCSA-Android/issues)
 
 
 

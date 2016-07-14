@@ -8,30 +8,26 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.peacecorps.pcsa.R;
+import com.peacecorps.pcsa.get_help_now.ContactPostStaff;
 
 /**
- * @author Buddhiprabha Erabadda
+ * Landing page of Reporting which has links for Reporting functionality
  *
- * Landing page of Reporting which has links for Reporting functinalities
+ * @author Buddhiprabha Erabadda
+ * @since 07-08-2015
  */
 public class HomeScreen extends Activity {
-
-    Button reportingSteps;
-    Button reportingTypes;
-    Button reportingMoreResources;
-    Button reportingConfidentiality;
-    Button reportingContactStaff;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reporting_homescreen);
 
-        reportingSteps = (Button) findViewById(R.id.reporting_steps);
-        reportingTypes = (Button) findViewById(R.id.reporting_types);
-        reportingMoreResources = (Button) findViewById(R.id.reporting_resources);
-        reportingConfidentiality = (Button) findViewById(R.id.reporting_confidentiality);
-        reportingContactStaff = (Button) findViewById(R.id.reporting_contact);
+        Button reportingSteps = (Button) findViewById(R.id.reporting_steps);
+        Button reportingTypes = (Button) findViewById(R.id.reporting_types);
+        Button reportingMoreResources = (Button) findViewById(R.id.reporting_resources);
+        Button reportingConfidentiality = (Button) findViewById(R.id.reporting_confidentiality);
+        Button reportingContactStaff = (Button) findViewById(R.id.reporting_contact);
 
         reportingSteps.setOnClickListener(new View.OnClickListener() {
             @Override

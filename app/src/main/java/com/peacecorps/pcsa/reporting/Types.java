@@ -11,33 +11,30 @@ import android.widget.TextView;
 import com.peacecorps.pcsa.R;
 
 /**
- * @author Buddhiprabha Erabadda
- *
  * Reporting Services available that are available
  * under the reporting types
+ *
+ * @author Buddhiprabha Erabadda
+ * @since 07-08-2015
  */
 public class Types extends Activity {
 
-    TextView descBoth;
-    TextView descStandard;
-
-    Button faq;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reporting_types);
 
-        descBoth = (TextView) findViewById(R.id.reporting_both);
-        descStandard = (TextView) findViewById(R.id.reporting_standard);
-        faq = (Button) findViewById(R.id.reporting_faq);
+        TextView descBoth = (TextView) findViewById(R.id.reporting_both);
+        TextView descStandard = (TextView) findViewById(R.id.reporting_standard);
+        Button faq = (Button) findViewById(R.id.reporting_faq);
 
         descBoth.setMovementMethod(new ScrollingMovementMethod());
         descStandard.setMovementMethod(new ScrollingMovementMethod());
 
         //TODO:Get values from the server
         descBoth.setText(R.string.reporting_desc_standard);
-        descStandard.setText(R.string.reporting_desc_standard);
+        descStandard.setText(R.string.reporting_desc_restricted);
 
         faq.setOnClickListener(new View.OnClickListener() {
             @Override
